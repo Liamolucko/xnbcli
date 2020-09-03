@@ -3,37 +3,7 @@
 This is a Deno port of [LeonBlade/xnbcli](https://github.com/LeonBlade/xnbcli).
 
 It's now usable as a module, and is also (in theory) now browser-compatible.
-
-## CLI
-### Requirements
-- [Deno](https://deno.land/)
-
-### Installation
-`deno install --allow-read --allow-write https://denopkg.com/Liamolucko/xnbcli/cli.ts`
-
-### Usage
-`xnbcli (pack|unpack) [input] [output]`
-
-## Module
-```typescript
-import * as xnb from "https://denopkg.com/Liamolucko/xnbcli/mod.ts";
-
-const helloWorld = xnb.pack({
-  header: {
-    target: "w",
-    hidef: true,
-    formatVersion: 5,
-    compressed: true,
-  },
-  readers: [{
-    type: "Microsoft.Xna.Framework.Content.StringReader",
-    version: 0,
-  }],
-  content: "Hello, World!",
-});
-
-console.log(xnb.unpack(helloWorld).content); // Hello, World!
-```
+**MOVED TO [`deno-dxt`](https://github.com/Liamolucko/deno-dxt)**
 
 # Original README
 
